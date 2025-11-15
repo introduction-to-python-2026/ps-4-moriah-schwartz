@@ -28,5 +28,5 @@ def split_at_first_digit(formula):
     prefix = formula[:digit_location]
     number_part = formula[digit_location:]
 
-    return prefix, int(number_part)
+    return prefix, number_part
 
