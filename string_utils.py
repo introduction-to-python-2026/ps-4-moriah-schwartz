@@ -1,13 +1,15 @@
 def split_before_each_uppercases(formula):
+    if not formula:
+      return[]
     start = 0
     end = 1
     split_formula = []
 
     for char in formula[1:]:
-        if char.isupper():
+        if char.isupper():               
             split_formula.append(formula[start:end])
-            start = end
-        end += 1
+            start = end                 
+        end += 1                        
 
     split_formula.append(formula[start:end])
 
